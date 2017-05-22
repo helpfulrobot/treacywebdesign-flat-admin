@@ -1,0 +1,114 @@
+/** ----------------------------------------------------
+* Buttons
+* ---------------------------------------------------- */
+
+.cms {
+	.ss-ui-button {
+		margin-top:0px;
+		font-weight: normal;
+		text-decoration: none;
+		line-height: $grid-y * 2;
+		color: lighten($color-text-dark, 20%);
+		border: none;
+		border-bottom: none;
+		cursor: pointer;
+		background-color: $color-button-generic;
+		background: $color-button-generic;
+		white-space: nowrap;
+		-moz-border-radius: 0px;
+		-webkit-border-radius: 0px;
+		-khtml-border-radius: 0px;
+		border-radius: 0px;
+		box-shadow: none;
+		-moz-box-shadow-inset: none;
+		-webkit-box-shadow-inset: none;
+		-khtml-box-shadow-inset: none;
+
+		&.ui-state-hover, &:hover {
+			text-decoration: none;
+			background: darken($color-button-generic, 10%);
+			background-color: darken($color-button-generic, 10%);
+			box-shadow: none;
+		}
+
+		&:active, &:focus, &.ui-state-active, &.ui-state-focus {
+			border: none;
+			background: lighten($color-button-generic, 10%);
+			background-color: lighten($color-button-generic, 10%);
+			box-shadow: none !important;
+		}
+
+		&.ss-ui-action-minor {
+			span {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+
+		/* constructive */
+		&.ss-ui-action-constructive {
+			text-shadow:none;
+			font-weight: normal;
+			color: $color-text-light;
+			border-color: #016b52;
+			border-bottom-color: #016b52;
+			background-color: #48AB42;
+			background: #48AB42;
+
+			&.ui-state-hover, &:hover {
+				border-color: #016b52;
+				background-color: lighten(#48AB42, 4%);
+				background: lighten(#48AB42, 4%);
+			}
+			&:active, &:focus, &.ui-state-active, &.ui-state-focus {
+				background-color: lighten(#48AB42, 4%);
+				background: lighten(#48AB42, 4%);
+			}
+		}
+
+		/* destructive */
+		&.ss-ui-action-destructive {
+			color: $color-button-destructive;
+			background-color: $color-button-generic;
+		}
+
+		&.ss-ui-button-small {
+			.ui-button-text {
+				font-size: $font-base-size - 2;
+			}
+		}
+
+		&.ui-state-highlight {
+			background-color: $color-button-highlight;
+			border: 1px solid $color-button-highlight-border;
+		}
+
+		&.ss-ui-action-minor {
+			background: none;
+			border: 0;
+			color: lighten($color-text-dark, 10%);
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+				color: $color-text-dark;
+			}
+			&:focus,
+			&:active {
+				text-decoration: none;
+				color: lighten($color-text-dark, 20%);
+			}
+		}
+
+	}
+
+	.field input.text, .field textarea, .field .TreeDropdownField{
+			background: #FAFAFA;
+			border: 1px solid #adadae;
+	}
+
+	.field label.left{
+		color: #555;
+	}
+
+}

@@ -1,0 +1,6 @@
+---
+Name: FlatAdmin
+---
+LeftAndMain:
+  extra_requirements_css:
+    - flat-admin/css/flat.css

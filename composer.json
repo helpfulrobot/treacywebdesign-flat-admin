@@ -1,0 +1,15 @@
+{
+  "name": "treacywebdesign"/flat-admin",
+  "description": "Custom CSS theme for SilverStripe 3 Admin Interface",
+  "type": "silverstripe-module",
+  "keywords": ["silverstripe", "theme", "flat", "admin"],
+  "authors": [
+    {
+      "name": "Michael Ryan",
+      "email": "torican@gmail.com"
+    }
+  ],
+  "require": {
+    "silverstripe/framework": "~3.2"
+  }
+}
